@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #E8EDDF;
+        }
+
+        /* estiliza o menu principal */
+        #menu {
+            background-color: #232F29;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #menu ul {
+            list-style: none;
+        }
+
+        #menu li {
+            display: inline-block;
+        }
+
+        /* Muda a cor do item do menu ao passar o mouse */
+        #menu li:hover {
+            background-color: #E8EDDF;
+        }
+
+        #menu a {
+            display: block;
+            padding: 10px 15px;
+            color: #C0900C;
+            text-decoration: none;
+        }
+
+        /* padroniza o css das seções */
+        .conteiner {
+            margin-top: 60px;
+            padding: 15px;
+            height: 100%;
+            background-color: #232F29;
+            text-align: center;
+            color: #C0900C;
+            line-height: 1.5;
+        }
+
+        .conteiner hr {
+            border-color:#C0900C;
+            margin-bottom: 10px;
+        }
+
+        /* estiliza a seção "sobre mim" */
+        #sobreMim img {
+            height: 200px;
+        }
+
+        /* estiliza a seção "formação" */
+        #formacao {
+            list-style-position: inside;
+        }
+
+        #formacao li {
+            margin: 20px;
+        }
+
+        /* estiliza a seção "portifólio" */
+        #portifolio a {
+            color:#C0900C;
+        }
+
+        /* estiliza a seção "contato" */
+        #contato table {
+            text-align: left;
+            margin: 0 auto;
+        }
+
+        /* estiliza o botão de submit */
+        #submit {
+            border-radius: 8px;
+            padding: 4px;
+            float: right;
+        }
+
+        /* estiliza o botão que retorna para o topo da página */
+        #voltarMenuInicial {
+            width: 25px;
+            height: 25px;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #C0900C;
+            opacity: 0.6;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <nav id="menu">
+            <ul>
+              <li><a href="#cabecalho">Sobre mim</a></li>
+              <li><a href="#formacao">Formação</a></li>
+              <li><a href="#portfolio">Portfólio</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </nav>
+    </header>
+
+    <section id="sobreMim" class="conteiner">
+        <h1 class="tituloDestacado">Sobre mim</h1>
+        <hr>
+        <p>Sou Alisson de Souza Rodrigues, nascido em Itambé - BA em 11 de dezembro de 2003, mas atualmente moro em Carapicuíba - SP.</p>
+        <img src="ItambeBA.jpeg" alt="Vista panorâmica de Itambé - Bahia">
+        <p>Gosto de praticar calistenia, assistir filmes de terror e ação, consumir literatura de ficção científica e fantástica na forma de livros e mangás e jogar jogos de sobrevivência e RPG.
+        </p>
+        <p>Atualmente, sou militar do Exército Brasileiro e estou cursando a minha primeira graduação de nível superior, Análise e Desenvolvimento de Sistemas, buscando migrar para a área de tecnologia.
+        </p>
+    </section>
+
+    <section id="formacao" class="conteiner">
+        <h1 class="tituloDestacado">Formação</h1>
+        <hr>
+        <ul>
+            <li>Militar da ativa pelo serviço temporário no 20° Grupo de Artilharia de Campanha Aeromóvel desde 2021.</li>
+            <li>Análise e Desenvolvimento de Sistemas na Uninter desde dezembro de 2023.</li>
+            <li>Cursando a trilha de cybersecurity na plataforma Skills for All da Cisco Networking Academy  - a plataforma migrará para a Netacad em 26 de agosto.</li>
+        </ul>
+    </section>
+
+    <section id="portifolio" class="conteiner">
+        <h1 class="tituloDestacado">Portifólio</h1>
+        <hr>
+        <p>Acompanhe meu <a href="https://github.com/Alisson-DeRodrigues" target="_blank">github:</a></p>
+    </section>
+
+    <section id="contato" class="conteiner">
+        <h1 class="tituloDestacado">Contato</h1>
+        <hr>
+        <p><b>Telefone:</b> (11) 94924-4208</p>
+        <p><b>E-mail:</b> alissoneppe@gmail.com</p>
+        <br>
+        <p>Envie uma mensagem diretamente:</p>
+        <form action="" method="">
+            <table>
+                <tr>
+                    <th><label for="name">Nome: </label></th>
+                    <td><input type="text" name="nome" id="nome"></td>
+                </tr>
+                <tr>
+                    <th><label for="email">E-mail:</label></th>
+                    <td><input type="text" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <th><label for="msg">Comentário:</label></th>
+                    <td><textarea rows="5" cols="35" placeholder="Digite sua mensagem"></textarea></td>
+                </tr>
+                    <td></td>
+                    <td><input name="submit" type="submit" id="submit" value="Enviar"></td>
+                </tr>
+            </table>
+        </form>
+    </section>
+
+    <!-- volta para o topo da página -->
+    <div id="voltarMenuInicial"><a href="#cabecalho"><img src="botaoTopo.webp" alt="botão que volta para o topo" height="100%"></a></div>     
+</body>
+</html>
